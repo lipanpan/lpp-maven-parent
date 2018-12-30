@@ -60,5 +60,25 @@
 		       </configuration>
 	       </plugin>
 		</plugins>
+		<!-- 跟dependencyManagement一样，统一声明插件及版本，后面子模块要用到则是需要手动引入即可 -->
+		<pluginManagement>
+			<plugins>
+				<!-- source jar 打包插件 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>3.0.1</version>
+					<executions>
+						<execution>
+							<id>attach-sources</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>jar-no-fork</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 </project>
