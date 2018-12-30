@@ -15,6 +15,7 @@
 		<logback.version>1.1.6</logback.version>
 		<guava.version>19.0</guava.version>
 		<fastjson.version>1.2.29</fastjson.version>
+		<junit.version>4.12</junit.version>
 	</properties>
 	<dependencies>
 		<!-- log start -->
@@ -32,7 +33,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>${junit.version}</version>
 		</dependency>
 		<!-- tool -->
 		<dependency>
